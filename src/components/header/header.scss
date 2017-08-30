@@ -1,0 +1,15 @@
+.header {
+  &-container {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+    height: 60px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    max-width: 100%;
+  }
+
+  &-logo {
+    height: 30px;
+    margin-left: 25px;
+    width: 161px;
+  }
+}

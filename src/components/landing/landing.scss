@@ -1,0 +1,50 @@
+@import '../../styles/includeMedia';
+
+.landing {
+  &-container {
+    position: relative;
+    margin-top: 15%;
+
+    @include media('<=iphoneplus') {
+      top: 10%;
+    }
+
+    h1 {
+      margin-bottom: 45px;
+    }
+  }
+
+  &-cta {
+    animation: .40s ease-in 0s 1 normal none fadeIn;
+  }
+
+  &-paragraph {
+    animation: .20s ease-in fadeIn;
+
+    .sub1 {
+      animation: .30s ease-in 0s 1 normal none fadeIn;
+    }
+
+    &:last-of-type {
+      margin-bottom: 45px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% { 
+      opacity: 0;
+      transform: translateY(-250px)
+    }
+    25% { transform: translateY(-50px) }
+    50% {
+      opacity: 0;
+      transform: translateY(-25px)
+    }
+    75% { transform: translateY(-10px) }
+    100% {
+      opacity: 1;
+      transform: translateY(0px)
+    }
+  }
+}
+
